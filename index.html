@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneethan Soundararajan - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(to right, #3B82F6, #14B8A6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .transition-all { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-900/80 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold gradient-text">NS</h1>
+            <div class="flex gap-4 items-center">
+                <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-gray-800 transition-colors" id="themeToggle">
+                    <svg id="sunIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg id="moonIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+                <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-blue-600 hover:bg-blue-700 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download CV
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-900 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="space-y-4">
+                <h2 class="text-5xl font-bold">Navaneethan Soundararajan</h2>
+                <p class="text-2xl text-blue-500 font-medium">Bilingual IT Professional | Business Analyst</p>
+                <p class="text-lg max-w-3xl text-gray-300">
+                    8+ years of experience delivering innovative IT solutions across Banking, Insurance, E-Commerce, and Building Automation domains with JLPT N2 & BJT J3 proficiency
+                </p>
+                <div class="flex flex-wrap gap-6 pt-4 text-gray-300">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>navaneethansoundar@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>+81 80-4382-3249</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Fujisawa, Japan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Summary -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h3 class="text-3xl font-bold mb-6 flex items-center gap-3">
+            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            Career Summary
+        </h3>
+        <p class="text-lg leading-relaxed text-gray-300">
+            Experienced IT professional with 8+ years working across various domains with expertise in bilingual projects. Possess JLPT N2 & BJT J3 proficiency in Japanese, enabling effective communication in multicultural environments. Committed to delivering project objectives by efficiently managing activities, ensuring proper task allocation and timely delivery. Technical skill set includes proficiency in multiple programming languages, hands-on software testing experience, and strong adaptability to new technologies.
+        </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="bg-gray-800/50 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+                Technical Skills
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Programming Languages</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Java</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Scripting</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Linux Shell Script</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Web Development</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">HTML5</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">CSS</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">AngularJS</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Frameworks</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Spring Boot</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Database</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">MySQL</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Cloud & CRM</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Salesforce CRM</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Service Cloud</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Marketing Cloud</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Protocols</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">BACNET</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">MODBUS</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">Tools</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">SSIS Package</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">GIT</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">WIRESHARK</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">VTS</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">JENKINS</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Data Loader</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-lg bg-gray-900/50 border border-gray-700">
+                    <h4 class="font-semibold text-blue-500 mb-3">PM Tools</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Jira</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Trello</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-300">Redmine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h3 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            Professional Experience
+        </h3>
+        <div class="space-y-6">
+            <div class="p-6 rounded-lg border-l-4 border-blue-500 bg-gray-800/50">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                        <h4 class="text-xl font-bold">Bilingual Business Analyst</h4>
+                        <p class="text-blue-500 font-medium">Metlife Japan KK</p>
+                        <p class="text-sm text-gray-400">via Skillhouse Staffing Solutions</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">November 2025 – Present</span>
+                </div>
+            </div>
+            <div class="p-6 rounded-lg border-l-4 border-blue-500 bg-gray-800/50">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                        <h4 class="text-xl font-bold">Bilingual Senior Project Coordinator</h4>
+                        <p class="text-blue-500 font-medium">Azbil Corporation</p>
+                        <p class="text-sm text-gray-400">via Softdel System Pvt Ltd</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">March 2023 – October 2025</span>
+                </div>
+            </div>
+            <div class="p-6 rounded-lg border-l-4 border-blue-500 bg-gray-800/50">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                        <h4 class="text-xl font-bold">Bilingual System Engineer</h4>
+                        <p class="text-blue-500 font-medium">Right-on Co., Ltd.</p>
+                        <p class="text-sm text-gray-400">via VeBuIn 株式会社</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">December 2021 – March 2023</span>
+                </div>
+            </div>
+            <div class="p-6 rounded-lg border-l-4 border-blue-500 bg-gray-800/50">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                        <h4 class="text-xl font-bold">Programmer Analyst</h4>
+                        <p class="text-blue-500 font-medium">Zurich Insurance Japan</p>
+                        <p class="text-sm text-gray-400">via Cognizant Technology Solutions</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">March 2020 – December 2021</span>
+                </div>
+            </div>
+            <div class="p-6 rounded-lg border-l-4 border-blue-500 bg-gray-800/50">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <div>
+                        <h4 class="text-xl font-bold">Assistant Application Developer</h4>
+                        <p class="text-blue-500 font-medium">Fujitsu Consulting India</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">December 2017 – February 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-gray-800/50 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+                Key Projects
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">Banking Application Development</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">Banking</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Dec 2017 - Jun 2018</p>
+                    <p class="text-sm mb-3 text-gray-300">Developed secure internet banking modules with interest calculation, currency conversion, and customer information management.</p>
+                    <p class="text-xs text-blue-500 font-medium">Java, Spring Boot, PostgreSQL, MySQL</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">Inventory Management System</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">Inventory Management</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Jul 2018 - Feb 2020</p>
+                    <p class="text-sm mb-3 text-gray-300">Integrated Glovia OM with Salesforce for order management, inventory tracking, and ERP functionalities.</p>
+                    <p class="text-xs text-blue-500 font-medium">Salesforce CRM, Apex Data Loader, Service Cloud</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">Insurance Platform</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">Insurance</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Mar 2020 - Dec 2021</p>
+                    <p class="text-sm mb-3 text-gray-300">Managed insurance applications with campaign data integration, SSO configuration, and production deployments.</p>
+                    <p class="text-xs text-blue-500 font-medium">Salesforce CRM, Service & Marketing Cloud</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">E-Commerce Application</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">E-Commerce</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Dec 2021 - Mar 2023</p>
+                    <p class="text-sm mb-3 text-gray-300">Built online store modules with POS data integration, complex queries, and ETL processes.</p>
+                    <p class="text-xs text-blue-500 font-medium">Java Spring Boot, Linux Shell Script, SSIS</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">Building Automation System</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">Building Automation</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Mar 2023 - Oct 2025</p>
+                    <p class="text-sm mb-3 text-gray-300">Developed web application for HVAC system monitoring with cloud database integration and network testing tools.</p>
+                    <p class="text-xs text-blue-500 font-medium">AngularJS, BACNET, WIRESHARK, VTS</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-900/50 border border-gray-700 transition-transform hover:scale-105">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-bold text-lg">Customer Support Automation</h4>
+                        <span class="px-2 py-1 rounded text-xs bg-blue-900 text-blue-200">Insurance</span>
+                    </div>
+                    <p class="text-sm mb-3 text-gray-400">Nov 2025 - Present</p>
+                    <p class="text-sm mb-3 text-gray-300">Implemented AI-driven customer support automation with multilingual knowledge base optimization.</p>
+                    <p class="text-xs text-blue-500 font-medium">Salesforce Agentforce, Service Cloud</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h3 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+            </svg>
+            Education & Certifications
+        </h3>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-lg bg-gray-800/50">
+                <h4 class="font-bold text-lg mb-4">Education</h4>
+                <div class="space-y-3">
+                    <div>
+                        <p class="font-medium">B.E. Computer Science & Engineering</p>
+                        <p class="text-sm text-gray-400">Tagore Engineering College, Anna University</p>
+                        <p class="text-sm text-gray-400">2017 | CGPA: 7.1</p>
+                    </div>
+                    <div>
+                        <p class="font-medium">Higher Secondary Education</p>
+                        <p class="text-sm text-gray-400">SVM Matriculation Higher Secondary School</p>
+                        <p class="text-sm text-gray-400">2013 | 85.9%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 rounded-lg bg-gray-800/50">
+                <h4 class="font-bold text-lg mb-4">Certifications</h4>
+                <div class="space-y-3">
+                    <div class="p-3 rounded bg-gray-900/50">
+                        <p class="font-medium">Copado Certified Administrator</p>
+                        <p class="text-sm text-gray-400">Credential ID: 003108</p>
+                    </div>
+                    <div class="p-3 rounded bg-gray-900/50">
+                        <p class="font-medium">JLPT N2</p>
+                        <p class="text-sm text-gray-400">Japanese Language Proficiency Test</p>
+                    </div>
+                    <div class="p-3 rounded bg-gray-900/50">
+                        <p class="font-medium">BJT J3</p>
+                        <p class="text-sm text-gray-400">Business Japanese Test</p>
+                    </div>
+                    <div class="p-3 rounded bg-gray-900/50">
+                        <p class="font-medium">Advance Diploma in Japanese</p>
+                        <p class="text-sm text-gray-400">University of Mumbai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages & Awards -->
+    <section class="bg-gray-800/50 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                        </svg>
+                        Language Proficiency
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="p-4 rounded-lg bg-gray-900/50">
+                            <p class="font-medium">English</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-gray-900/50">
+                            <p class="font-medium">Japanese</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-gray-900/50">
+                            <p class="font-medium">Tamil</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                        Awards & Recognition
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="p-4 rounded-lg bg-gray-900/50">
+                            <p class="font-medium">Rockstar Award</p>
+                            <p class="text-sm text-gray-400">Softdel System Pvt Ltd - Q4 FY 24-25</p>
+                            <p class="text-sm text-gray-400">Recognition of dedication and outstanding performance</p>
+                        </div>
+                        <div class="p-4 rounded-lg bg-gray-900/50">
+                            <p class="font-medium">Performance Recognition</p>
+                            <p class="text-sm text-gray-400">Outstanding contributions to project objectives and team success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                © 2026 Navaneethan Soundararajan. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        let isDark = true;
+        
+        function toggleDarkMode() {
+            isDark = !isDark;
+            const body = document.body;
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            
+            if (isDark) {
+                body.className = 'bg-gray-900 text-gray-100';
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                body.className = 'bg-gray-50 text-gray-900';
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+            
+            // Update all sections
+            updateTheme();
+        }
+        
+        function updateTheme() {
+            const sections = document.querySelectorAll('section, header, footer');
+            sections.forEach(section => {
+                if (isDark) {
+                    section.className = section.className.replace(/bg-white|bg-gray-50|bg-gray-100|text-gray-900|text-gray-700|text-gray-600|border-gray-200/g, function(match) {
+                        const darkMap = {
+                            'bg-white': 'bg-gray-800/50',
+                            'bg-gray-50': 'bg-gray-800/50',
+                            'bg-gray-100': 'bg-gray-900',
+                            'text-gray-900': 'text-gray-100',
+                            'text-gray-700': 'text-gray-300',
+                            'text-gray-600': 'text-gray-300',
+                            'border-gray-200': 'border-gray-800'
+                        };
+                        return darkMap[match] || match;
+                    });
+                } else {
+                    section.className = section.className.replace(/bg-gray-900|bg-gray-800\/50|text-gray-100|text-gray-300|border-gray-800/g, function(match) {
+                        const lightMap = {
+                            'bg-gray-900': 'bg-gray-100',
+                            'bg-gray-800/50': 'bg-white',
+                            'text-gray-100': 'text-gray-900',
+                            'text-gray-300': 'text-gray-700',
+                            'border-gray-800': 'border-gray-200'
+                        };
+                        return lightMap[match] || match;
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
